@@ -24,4 +24,10 @@ function calc(op){
     }
 
     document.getElementById("output").value = output;
+
+    //document.getElementById("history").innerHTML += "<div>" + num1 + " " + op + " " + num2 + " " + "=" + output + "</div>";
+
+       var newHistory = "<div>" + num1 + "" + op + "" + num2 + "" + "=" + output + "</div>";
+
+    document.getElementById("history").innerHTML = newHistory.getElementById("history").innerHTML; 
 }
